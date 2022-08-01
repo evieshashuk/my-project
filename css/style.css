@@ -2,9 +2,23 @@
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --font-size: 30px;
+  --font-size: 25px;
 }
---font-size: 30px;
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+  .img-hide {
+    display: none;
+  }
+}
 
 body {
   margin: 60px auto;
@@ -19,11 +33,11 @@ h3 {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 60px;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 38px;
 }
 
 h3 {
@@ -78,16 +92,20 @@ p {
 
 .about-paragraphs p {
   margin: 10px;
+  text-align: center;
 }
 
 .email-link {
   display: flex;
   justify-content: center;
   color: var(--primary-color);
-  font-size: 28px;
+  font-size: 25px;
   text-decoration: none;
 }
 
 .email-link:hover {
   text-decoration: underline;
+}
+.contact-mail {
+  margin: 20px 0;
 }
